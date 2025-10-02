@@ -55,14 +55,6 @@ namespace Game.Editor.ParticlePrefabCollector
             w.Focus();
         }
 
-        [System.Serializable]
-        public class ParticlePrefabScanResult : ScriptableObject
-        {
-            public List<string> prefabPaths = new();
-            public List<string> scanFolders = new();
-            public System.DateTime ScanTime;
-        }
-
         private const string ScanResultAssetPath =
             "Assets/Editor/ParticlePrefabCollector/ParticlePrefabScanResult.asset";
 
